@@ -34,9 +34,11 @@ app.get("/proxy", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(3000, () => {
   console.log(`Proxy server running on http://localhost:${PORT}`);
 });
+
+module.exports = app;
 
 // https://pucit.edu.pk/fee-structure
 // http://localhost:3000/proxy/?url=https://pucit.edu.pk/fee-structure
